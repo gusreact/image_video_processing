@@ -4,8 +4,7 @@ import glob # It finds the path names of some files given a certain pattern
 img = cv2.imread("galaxy.jpg",0)
 print(type(img))
 print(img)
-print(img.shape) # The image
-resolution
+print(img.shape) # The image resolution
 print(img.ndim) # The number of dimensions
 print(img.size) # The number of pixels
 
