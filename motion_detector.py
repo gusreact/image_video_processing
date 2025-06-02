@@ -32,6 +32,7 @@ while True:
         cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 3) # Draw a rectangle around the contour on the original frame
     
     status_list.append(status)
+    status_list=status_list[-2:] # Keep only the last two status values
     
     if(status_list[-1] == 1 and status_list[-2] == 0): # If motion is detected
         times.append(datetime.now()) # Append the current time to the times list if motion is detected
